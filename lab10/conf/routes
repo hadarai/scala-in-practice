@@ -1,0 +1,13 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /students                   controllers.StudentController.index
+  # displays page with list of all students (just names)
+GET     /student/:student_index             controllers.StudentController.by_id(student_index)
+  # displays page with full information about student for given index
+GET     /lectures                   controllers.LecturesController.index
+  #displays page with list of all lectures
+GET     /lecture/:lecture_id                controllers.LecturesController.by_id(lecture_id)
+  #displays page with full information about lecture for given id with list of all students enrolled for the lecture (just names)
